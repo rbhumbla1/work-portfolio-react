@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-         🛠 Work Portfolio Using React In Progress 🛠
+         🛠 My Work Portfolio With React In Progress 🛠
         </p>
         <a
           className="App-link"
