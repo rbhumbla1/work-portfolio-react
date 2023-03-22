@@ -40,24 +40,36 @@ hlink: {
 
 // We use JSX curly braces to evaluate the style object on the JSX tag
 
-function Navbar() {
+function Navbar({ currentPage, handlePageChange }) {
   return (
     <header style={styles.header}>
         <h1 style={styles.h1}><a href="https://github.com/rbhumbla1" style={styles.hlink}>RBhumbla1</a></h1>
     <nav className="navbar navbar-expand-lg" style={styles.nav}>
             <ul className="navbar-nav">
                 <li className="nav-item active">
-                    <a href="#AboutMe" className="nav-link" style={styles.hlink}>About Me</a>
+                    <a href="#About" 
+                    className={currentPage === 'About' ? 'nav-link active' : 'nav-link'} 
+                    style={styles.hlink} 
+                    onClick={() => handlePageChange('Home')}>About Me</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#AboutWork" className="nav-link" style={styles.hlink}>Work</a>
+                    <a href="#Work" 
+                    className={currentPage === 'Work' ? 'nav-link active' : 'nav-link'} 
+                    style={styles.hlink}
+                    onClick={() => handlePageChange('Work')}>Work</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#AboutContact" className="nav-link" style={styles.hlink}>Contact Me</a>
+                    <a href="#Contact" 
+                    className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}  
+                    style={styles.hlink}
+                    onClick={() => handlePageChange('Contact')}>Contact Me</a>
                 </li>
                 <li className="nav-item">
                     <a
-                        href="https://docs.google.com/document/d/1SFNAzc7UqTH0-faUBU2EGZJIdyNyubTatG_xwVNfspo/edit" className="nav-link" style={styles.hlink}>Resume</a>
+                        href="#Resume" 
+                        className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'} 
+                        style={styles.hlink}
+                        onClick={() => handlePageChange('Resume')}>Resume</a>
                 </li>
             </ul>
     </nav>
