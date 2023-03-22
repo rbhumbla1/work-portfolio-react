@@ -1,10 +1,6 @@
 import React from 'react';
 
 const styles = {
-  navbarStyle: {
-    background: 'green',
-    justifyContent: 'flex-end',
-  },
   header: {
     display:'flex',
     width:'100%',
