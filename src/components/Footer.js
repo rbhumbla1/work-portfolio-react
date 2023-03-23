@@ -1,16 +1,19 @@
 import React from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const styles = {
   sectionStyles: {
-    background: 'orange',
+    background: 'grey',
+    paddingTop: '0px',
+    marginTop: '0px',
   },
   /*navigation links in the header*/
 nav: {
     display:'flex',
-    paddingTop: '15px',
-    marginRight: '20px',
-    justifyContent:'flex-center',
+    paddingTop: '0px',
+    marginTop: '0px',
+    justifyContent:'center',
+    alignItems: 'center',
     flexDirection: 'row',
     float: 'right',
     fontFamily: 'Gill Sans',
@@ -30,25 +33,12 @@ hlink: {
 function Footer() {
   return (
     <footer style={styles.sectionStyles} className="fixed-bottom">
-      <h2>Lorem Ipsum Dolor Sit Amet</h2>
-      <nav className="navbar navbar-expand-lg" style={styles.nav}>
-            <ul className="navbar-nav">
-                <li className="nav-item active">
-                    <a href="#AboutMe" className="nav-link" style={styles.hlink}>About Me</a>
-                </li>
-                <li className="nav-item">
-                    <a href="#AboutWork" className="nav-link" style={styles.hlink}>Work</a>
-                </li>
-                <li className="nav-item">
-                    <a href="#AboutContact" className="nav-link" style={styles.hlink}>Contact Me</a>
-                </li>
-                <li className="nav-item">
-                    <a
-                        href="https://docs.google.com/document/d/1SFNAzc7UqTH0-faUBU2EGZJIdyNyubTatG_xwVNfspo/edit" className="nav-link" style={styles.hlink}>Resume</a>
-                </li>
-            </ul>
-    </nav>
-      
+        <div>
+        <FontAwesomeIcon icon="fa-solid fa-check-square" />
+    Your <FontAwesomeIcon icon="fa-brands fa-twitter" /> is hot!
+
+    Compliments of the <FontAwesomeIcon icon="fa-sharp fa-solid fa-hat-chef" />!
+    </div>
     </footer>
   );
 }

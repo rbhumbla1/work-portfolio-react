@@ -5,9 +5,9 @@ const styles = {
     display:'flex',
     width:'100%',
     flexDirection:'row',
-    padding: '20px',
+    // padding: '10px',
     fontFamily: 'Trebuchet MS',
-    backgroundColor: 'rgb(163, 105, 17)',
+    backgroundColor: 'DarkBlue',
     color: '#ffffff'
 },
 /* Title in header */
@@ -15,26 +15,29 @@ h1: {
     display: 'flex',
     justifyContent: 'flex-start',
     flex: '1 0 20%',
-    fontSize: '48px'
+    fontSize: '40px',
+    color: '#ffffff',
+    paddingTop: '10px'
 },
 
 /*navigation links in the header*/
 nav: {
     display:'flex',
-    paddingTop: '15px',
-    marginRight: '20px',
+    paddingTop: '10px',
+    marginRight: '50px',
     justifyContent:'flex-end',
     flexDirection: 'row',
     float: 'right',
-    fontFamily: 'Gill Sans',
-    fontSize: '20px'
+    fontFamily: 'Trebuchet MS',
+    fontSize: '30px'
 },
 
 /*class selector*/
 
 hlink: {
     color: '#ffffff',
-    textDecoration: 'underline'
+    margin:'20px',
+    // textDecoration: 'underline'
 }
 };
 
@@ -50,7 +53,7 @@ function Navbar({ currentPage, handlePageChange }) {
                     <a href="#About" 
                     className={currentPage === 'About' ? 'nav-link active' : 'nav-link'} 
                     style={styles.hlink} 
-                    onClick={() => handlePageChange('Home')}>About Me</a>
+                    onClick={() => handlePageChange('About')}>About Me</a>
                 </li>
                 <li className="nav-item">
                     <a href="#Work" 
