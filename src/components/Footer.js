@@ -2,45 +2,53 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const styles = {
-  sectionStyles: {
-    background: 'grey',
-    paddingTop: '0px',
-    marginTop: '0px',
-  },
-  /*navigation links in the header*/
-nav: {
-    display:'flex',
-    paddingTop: '0px',
-    marginTop: '0px',
-    justifyContent:'center',
-    alignItems: 'center',
-    flexDirection: 'row',
-    float: 'right',
-    fontFamily: 'Gill Sans',
-    fontSize: '20px'
-},
+    footer: {
+        background: 'white',
+        paddingTop: '10px',
+        marginTop: '20px',
+        fontSize: '20px',
+        heigth: '10%',
+    },
+    nav: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'row',
 
-/*class selector*/
-
-hlink: {
-    color: '#ffffff',
-    textDecoration: 'underline'
-}
+    },
+    icon:{
+        color:'DarkBlue',
+        fontSize:'30px'
+    }
 };
 
 // We use JSX curly braces to evaluate the style object on the JSX tag
 
 function Footer() {
-  return (
-    <footer style={styles.sectionStyles} className="fixed-bottom">
-        <div>
-        <FontAwesomeIcon icon="fa-solid fa-check-square" />
-    Your <FontAwesomeIcon icon="fa-brands fa-twitter" /> is hot!
+    return (
+        <footer style={styles.footer} className="fixed-bottom">
 
-    Compliments of the <FontAwesomeIcon icon="fa-sharp fa-solid fa-hat-chef" />!
-    </div>
-    </footer>
-  );
+            <nav className="navbar navbar-expand-lg" style={styles.nav}>
+                <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <a className="btn btn-default" href="mailto:rima.bhumbla@gmail.com" aria-label="Email">
+                            <FontAwesomeIcon icon="fa fa-envelope fa-5x" style={styles.icon}/>
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="btn btn-default" href="https://github.com/rbhumbla1" target="blank" aria-label="Github">
+                            <FontAwesomeIcon icon="fa-brands fa-github-square fa-5x" style={styles.icon}/>
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="btn btn-default" href="https://www.linkedin.com/in/rimabhumbla/" target="blank" aria-label="LinkedIn">
+                            <FontAwesomeIcon icon="fa-brands fa-linkedin fa-5x" style={styles.icon}/>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    );
 }
 
 export default Footer;
