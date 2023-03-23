@@ -1,4 +1,5 @@
 import React from 'react';
+import './Navbar.css';
 
 const styles = {
   header: {
@@ -17,7 +18,8 @@ h1: {
     flex: '1 0 20%',
     fontSize: '40px',
     color: '#ffffff',
-    paddingTop: '10px'
+    paddingTop: '30px',
+    paddingLeft: '10px',
 },
 
 /*navigation links in the header*/
@@ -37,7 +39,6 @@ nav: {
 hlink: {
     color: '#ffffff',
     margin:'20px',
-    // textDecoration: 'underline'
 }
 };
 
@@ -46,7 +47,7 @@ hlink: {
 function Navbar({ currentPage, handlePageChange }) {
   return (
     <header style={styles.header}>
-        <h1 style={styles.h1}><a href="https://github.com/rbhumbla1" style={styles.hlink}>RBhumbla1</a></h1>
+        <h1 style={styles.h1}>Rima Bhumbla</h1>
     <nav className="navbar navbar-expand-lg" style={styles.nav}>
             <ul className="navbar-nav">
                 <li className="nav-item active">
@@ -65,7 +66,7 @@ function Navbar({ currentPage, handlePageChange }) {
                     <a href="#Contact" 
                     className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}  
                     style={styles.hlink}
-                    onClick={() => handlePageChange('Contact')}>Contact Me</a>
+                    onClick={() => handlePageChange('Contact')}>Contact</a>
                 </li>
                 <li className="nav-item">
                     <a
