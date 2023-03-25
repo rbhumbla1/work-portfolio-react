@@ -100,7 +100,7 @@ export default function Contact() {
 
     // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
     if (!validateEmail(email)) {
-      setErrorEmailMessage('Email is invalid.');
+      setErrorEmailMessage('Your email is invalid.');
       // We want to exit out of this code block if something is wrong so that the user can correct it
       return;
 
