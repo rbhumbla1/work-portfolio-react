@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-//import logo from '../logo.svg';
-import Navbar from "./Navbar";
+import Header from "./Header";
 import Footer from "./Footer";
 import Work from './pages/Work';
 import About from './pages/About';
@@ -40,7 +39,7 @@ function Content() {
 
     return (
         <div style={styles.div}>
-            <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+            <Header currentPage={currentPage} handlePageChange={handlePageChange} />
             <p>
                 🛠 Work Portfolio with React In Progress 🛠
             </p>
