@@ -17,7 +17,7 @@ const styles = {
 
 // We use JSX curly braces to evaluate the style object on the JSX tag
 
-function Content() {
+function MainContainer() {
 
     const [currentPage, setCurrentPage] = useState('About');
 
@@ -51,4 +51,4 @@ function Content() {
     );
 }
 
-export default Content;
+export default MainContainer;

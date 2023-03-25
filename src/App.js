@@ -1,5 +1,5 @@
 import './App.css';
-import Content from "./components/Content";
+import MainContainer from "./components/MainContainer";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter, faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -17,7 +17,7 @@ const styles = {
 function App() {
   return (
     <div className="App" style={styles.div}>
-      <Content />
+      <MainContainer />
     </div>
   );
 }
