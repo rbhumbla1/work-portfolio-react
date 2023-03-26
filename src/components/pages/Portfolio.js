@@ -89,7 +89,8 @@ const styles = {
     flex: '1 0 20%',
     fontSize: '30px',
     paddingTop: '20px',
-    color: 'DarkBlue',
+    //color: 'DarkBlue',
+    color: '#1d3557',
     fontFamily: 'Trebuchet MS',
   },
 
@@ -99,7 +100,8 @@ const styles = {
     flex: '1 0 20%',
     fontSize: '20px',
     paddingTop: '20px',
-    color: 'DarkBlue',
+    //color: 'DarkBlue',
+    color: '#1d3557',
     fontFamily: 'Trebuchet MS',
   },
 
