@@ -40,9 +40,7 @@ function MainContainer() {
     return (
         <div style={styles.div}>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-            <p>
-                🛠 Work Portfolio with React In Progress 🛠
-            </p>
+    
             {/* We are passing the currentPage from state and the function to update it */}
             {/* Here we are calling the renderPage method which will return a component  */}
             {renderPage()}

@@ -29,7 +29,7 @@ const styles = {
         paddingTop: '20px',
         //color: 'DarkBlue',
         color: '#1d3557',
-        fontFamily: 'Trebuchet MS',
+        fontFamily: 'Permanent Marker',
     },
 
     h4: {
@@ -40,22 +40,22 @@ const styles = {
         paddingTop: '20px',
         //color: 'DarkBlue',
         color: '#1d3557',
-        fontFamily: 'Trebuchet MS',
+        fontFamily: 'Permanent Marker',
     },
 
     p: {
 
         textAlign: 'left',
-        fontSize: '20px',
+        fontSize: '25px',
         //color: 'DarkBlue',
         color: '#1d3557',
-        fontFamily: 'Trebuchet MS',
+        fontFamily: 'Permanent Marker',
     },
 
     icon: {
         //color:'DarkBlue',
         color: '#1d3557',
-        fontSize: '30px'
+        fontSize: '25px'
     },
     a: {
         //display: 'inline-block',
@@ -66,8 +66,8 @@ const styles = {
 };
 
 
-export default function Project({ img }) {
-    console.log("in project: ", img)
+export default function Project( proj ) {
+    console.log("in project: ", proj)
     const [display, setDisplay] = useState("notdisplayed");
     const showButton = e => {
         e.preventDefault();
@@ -91,7 +91,7 @@ export default function Project({ img }) {
                 border: 'solid brown',
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                backgroundImage: `url(${img})`,
+                backgroundImage: `url(${proj.img})`,
                 color: "#f5f5f5"
             }}
             onMouseEnter={e => showButton(e)}
@@ -100,15 +100,15 @@ export default function Project({ img }) {
             <div style={styles.div}>
                 <ul style={styles.p}>
                     <li style={{ display: 'inline-block', textAlign: 'left' }}>
-                        <a className={display} style={styles.a} href="https://rbhumbla1.github.io/README-Generator/" target='blank'><b>README GNERATOR</b></a>
+                        <a className={display} style={styles.a} href={proj.projectURL} target='blank'><b>{proj.project}</b></a>
                     </li>
 
                     <li style={{ display: 'inline-block', textAlign: 'left' }}>
-                        <a className={display} href="https://github.com/rbhumbla1/Password-Generator" target='blank'><FontAwesomeIcon icon="fa-brands fa-github-square fa-5x" style={styles.icon} /></a>
+                        <a className={display} href={proj.github} target='blank'><FontAwesomeIcon icon="fa-brands fa-github-square fa-5x" style={styles.icon} /></a>
                     </li>
                 </ul>
 
-                <p style={styles.p} className={display}>Javascript</p>
+                <p style={styles.p} className={display}>{proj.tech}</p>
             </div>
 
         </div>

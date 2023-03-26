@@ -12,7 +12,7 @@ nav: {
     justifyContent:'flex-end',
     flexDirection: 'row',
     float: 'right',
-    fontFamily: 'Trebuchet MS',
+    fontFamily: 'Permanent Marker',
     fontSize: '25px'
 },
 

@@ -24,18 +24,18 @@ const styles = {
     display: 'flex',
     justifyContent: 'flex-start',
     flex: '1 0 20%',
-    fontSize: '30px',
+    fontSize: '35px',
     paddingTop: '20px',
     //color: 'DarkBlue',
     color: '#1d3557',
-    fontFamily: 'Trebuchet MS',
+    fontFamily: 'Permanent Marker',
   },
   p: {
 
     textAlign: 'left',
-    //color: 'DarkBlue',
+    fontSize: '20px',
     color: '#1d3557',
-    fontFamily: 'Trebuchet MS',
+    fontFamily: 'Permanent Marker',
   },
   img: {
     bottom: '16px',

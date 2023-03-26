@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from './Navigation';
 
-import bgImg from "./sky.jpg";
+import bgImg from "./images/sky.jpg";
 
 const styles = {
   header: {
@@ -9,7 +9,7 @@ const styles = {
     width: '100%',
     flexDirection: 'row',
     padding: '10px',
-    fontFamily: 'Trebuchet MS',
+    fontFamily: 'Permanent Marker',
     backgroundColor: 'DarkBlue',
     color: '#ffffff',
     backgroundImage:`url(${bgImg})`,
@@ -35,7 +35,7 @@ const styles = {
     justifyContent: 'flex-end',
     flexDirection: 'row',
     float: 'right',
-    fontFamily: 'Trebuchet MS',
+    fontFamily: 'Permanent Marker',
     fontSize: '25px'
   },
 
