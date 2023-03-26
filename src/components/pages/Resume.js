@@ -22,7 +22,8 @@ const styles = {
         flex: '1 0 20%',
         fontSize: '30px',
         paddingTop: '20px',
-        color: 'DarkBlue',
+        //color: 'DarkBlue',
+        color: '#1d3557',
         fontFamily: 'Trebuchet MS',
     },
 
@@ -32,14 +33,16 @@ const styles = {
         flex: '1 0 20%',
         fontSize: '20px',
         paddingTop: '20px',
-        color: 'DarkBlue',
+        //color: 'DarkBlue',
+        color: '#1d3557',
         fontFamily: 'Trebuchet MS',
     },
 
     p: {
 
         textAlign: 'left',
-        color: 'DarkBlue',
+        //color: 'DarkBlue',
+        color: '#1d3557',
         fontFamily: 'Trebuchet MS',
     },
 
@@ -49,7 +52,7 @@ export default function Resume() {
     return (
         <div className="container" style={styles.div}>
             <div style={styles.box}>
-                <h2 style={styles.h2}>Resume</h2>
+                <h2 style={styles.h2}><b>Resume</b></h2>
                 <br />
                 <p style={styles.p}>
                     {/* <b>Download my <Link to="https://drive.google.com/file/d/1wZ1VstGJIhCX3tcviALWKg7rwhPpnCyP/view?usp=sharing" target="blank" download>Resume</Link></b> */}

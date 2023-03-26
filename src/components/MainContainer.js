@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from "./Header";
 import Footer from "./Footer";
-import Work from './pages/Work';
+import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
@@ -23,8 +23,8 @@ function MainContainer() {
 
     // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
     const renderPage = () => {
-        if (currentPage === 'Work') {
-            return <Work />;
+        if (currentPage === 'Portfolio') {
+            return <Portfolio />;
         }
         if (currentPage === 'About') {
             return <About />;

@@ -26,13 +26,15 @@ const styles = {
     flex: '1 0 20%',
     fontSize: '30px',
     paddingTop: '20px',
-    color: 'DarkBlue',
+    //color: 'DarkBlue',
+    color: '#1d3557',
     fontFamily: 'Trebuchet MS',
   },
   p: {
 
     textAlign: 'left',
-    color: 'DarkBlue',
+    //color: 'DarkBlue',
+    color: '#1d3557',
     fontFamily: 'Trebuchet MS',
   },
   img: {
@@ -59,10 +61,12 @@ const styles = {
   card: { 
     width: '40rem',
     borderWidth:'2px',
-    borderColor:'DarkBlue'
+    //borderColor:'DarkBlue'
+    borderColor: '#1d3557',
    },
    cardButton:{
-    backgroundColor:'DarkBlue',
+    //backgroundColor:'DarkBlue',
+    backgroundColor: '#1d3557',
     color:'white'
    }
 
@@ -124,7 +128,7 @@ export default function Contact() {
   return (
     <div className="container" style={styles.div}>
       <div style={styles.box}>
-        <h2 style={styles.h2}>Contact Me</h2>
+        <h2 style={styles.h2}><b>Contact Me</b></h2>
     
         <Card style={styles.card}>
         <Card.Body>

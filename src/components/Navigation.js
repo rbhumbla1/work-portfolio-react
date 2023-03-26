@@ -29,7 +29,7 @@ function Navigation({ currentPage, handlePageChange }) {
           <Nav.Link href="#About" onClick={() => handlePageChange('About')}>About Me</Nav.Link>
         </Nav.Item>
         <Nav.Item as="li">
-          <Nav.Link href="#Work" onClick={() => handlePageChange('Work')}>Work</Nav.Link>
+          <Nav.Link href="#Work" onClick={() => handlePageChange('Portfolio')}>Portfolio</Nav.Link>
         </Nav.Item>
         <Nav.Item as="li">
           <Nav.Link href="#Contact" onClick={() => handlePageChange('Contact')}>Contact</Nav.Link>

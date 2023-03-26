@@ -1,18 +1,22 @@
 import React from 'react';
 import Navigation from './Navigation';
 
+import bgImg from "./sky.jpg";
+
 const styles = {
   header: {
-    display:'flex',
-    width:'100%',
-    flexDirection:'row',
- padding: '10px',
+    display: 'flex',
+    width: '100%',
+    flexDirection: 'row',
+    padding: '10px',
     fontFamily: 'Trebuchet MS',
     backgroundColor: 'DarkBlue',
-    color: '#ffffff'
-},
-/* Title in header */
-h1: {
+    color: '#ffffff',
+    backgroundImage:`url(${bgImg})`,
+
+  },
+  /* Title in header */
+  h1: {
     display: 'flex',
     justifyContent: 'flex-start',
     flex: '1 0 20%',
@@ -21,26 +25,26 @@ h1: {
     //color:'#0d6efd',
     paddingTop: '20px',
     paddingLeft: '10px',
-},
+  },
 
-/*navigation links in the header*/
-nav: {
-    display:'flex',
+  /*navigation links in the header*/
+  nav: {
+    display: 'flex',
     paddingTop: '10px',
     marginRight: '50px',
-    justifyContent:'flex-end',
+    justifyContent: 'flex-end',
     flexDirection: 'row',
     float: 'right',
     fontFamily: 'Trebuchet MS',
     fontSize: '25px'
-},
+  },
 
-/*class selector*/
+  /*class selector*/
 
-hlink: {
+  hlink: {
     color: '#ffffff',
-    margin:'20px',
-}
+    margin: '20px',
+  }
 };
 
 // We use JSX curly braces to evaluate the style object on the JSX tag
@@ -48,8 +52,8 @@ hlink: {
 function Header({ currentPage, handlePageChange }) {
   return (
     <header style={styles.header}>
-        <h1 style={styles.h1}>Rima Bhumbla</h1>
-        <Navigation currentPage={currentPage} handlePageChange={handlePageChange}/>
+      <h1 style={styles.h1}>Rima Bhumbla</h1>
+      <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
     </header>
   );
 }

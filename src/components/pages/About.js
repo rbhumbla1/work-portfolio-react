@@ -23,13 +23,15 @@ const styles = {
         flex: '1 0 20%',
         fontSize: '30px',
         paddingTop: '20px',
-        color:'DarkBlue',
+        //color:'DarkBlue',
+        color: '#1d3557',
         fontFamily: 'Trebuchet MS',
     },
     p: {
 
         textAlign: 'left',
-        color:'DarkBlue',
+        //color:'DarkBlue',
+        color: '#1d3557',
         fontFamily: 'Trebuchet MS',
     },
     img: {
@@ -48,7 +50,7 @@ export default function About() {
     return (
         <div className="container" style={styles.div}>
             <div style={styles.box}>
-                <h2 style={styles.h2}>About Me</h2>
+                <h2 style={styles.h2}><b>About Me</b></h2>
                 <br />
                 <img src={photo} style={styles.img} alt="Rima Bhumbla" />
                 <br />

@@ -17,7 +17,8 @@ const styles = {
 
     },
     icon:{
-        color:'DarkBlue',
+        //color:'DarkBlue',
+        color: '#1d3557',
         fontSize:'30px'
     }
 };
