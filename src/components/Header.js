@@ -28,13 +28,13 @@ const styles = {
 
 };
 
-// We use JSX curly braces to evaluate the style object on the JSX tag
+// Header in main container which will display the developer's name & navigation bar.
 
-function Header({ currentPage, handlePageChange }) {
+function Header({ developer, currentPage, handlePageChange }) {
   
   return (
     <header style={styles.header}>
-      <h1 style={styles.h1}>Rima Bhumbla</h1>
+      <h1 style={styles.h1}>{developer}</h1>
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
     </header>
   );

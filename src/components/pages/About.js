@@ -41,7 +41,7 @@ const styles = {
     }
 
 };
-
+// Page to show developer information
 export default function About() {
     return (
         <div className="container" style={styles.div}>

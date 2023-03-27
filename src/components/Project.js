@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+// Import the CSS file for Project component
 import './Project.css';
+// import font-awesome package
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-
-
+// Local styles
 const styles = {
 
     div: {
@@ -37,16 +38,19 @@ const styles = {
     }
 };
 
-
+// Porject is the reusable compoenent used again and again to display 6 projects in Portfolio page. 
+//It gets the project informastion in props from Portfolio page for each project.
 export default function Project( proj ) {
-    console.log("in project: ", proj)
+    //state variable to keep track of displaying the project info links
     const [display, setDisplay] = useState("notdisplayed");
-    const showButton = e => {
+    
+    // Funtions to show or hide the project info
+    const showInfo = e => {
         e.preventDefault();
         setDisplay("displayed");
     };
 
-    const hideButton = e => {
+    const hideInfo = e => {
         e.preventDefault();
         setDisplay("notdisplayed");
     };
@@ -66,8 +70,8 @@ export default function Project( proj ) {
                 backgroundImage: `url(${proj.img})`,
                 color: "#f5f5f5"
             }}
-            onMouseEnter={e => showButton(e)}
-            onMouseLeave={e => hideButton(e)}
+            onMouseEnter={e => showInfo(e)}
+            onMouseLeave={e => hideInfo(e)}
         >
             <div style={styles.div}>
                 <ul style={styles.p}>

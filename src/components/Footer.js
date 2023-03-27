@@ -22,26 +22,28 @@ const styles = {
     }
 };
 
-// We use JSX curly braces to evaluate the style object on the JSX tag
+// Footer for the application.  It contains icons for third party links - Email, GitHub and LinkedIn
 
-function Footer() {
+function Footer({devEmail, devGitHub,devLinkedIn}) {
+
+    let email = "mailto: " + {devEmail};
+    
     return (
         <footer style={styles.footer} className="fixed-bottom">
-
             <nav className="navbar navbar-expand-lg" style={styles.nav}>
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="btn btn-default" href="mailto:rima.bhumbla@gmail.com" aria-label="Email">
+                        <a className="btn btn-default" href={email} aria-label="Email">
                             <FontAwesomeIcon icon="fa fa-envelope fa-5x" style={styles.icon}/>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="btn btn-default" href="https://github.com/rbhumbla1" target="blank" aria-label="Github">
+                        <a className="btn btn-default" href={devGitHub} target="blank" aria-label="Github">
                             <FontAwesomeIcon icon="fa-brands fa-github-square fa-5x" style={styles.icon}/>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="btn btn-default" href="https://www.linkedin.com/in/rimabhumbla/" target="blank" aria-label="LinkedIn">
+                        <a className="btn btn-default" href={devLinkedIn} target="blank" aria-label="LinkedIn">
                             <FontAwesomeIcon icon="fa-brands fa-linkedin fa-5x" style={styles.icon}/>
                         </a>
                     </li>

@@ -1,7 +1,7 @@
 # Work Portfolio Using React
 This single-page React Work Portfolio application presents a web developer's projects and resume with the developer community.
-## Description
 
+## Description
 The following describe the main features of the application:
 
 * In this single-page application portfolio for a web developer is loaded, the user is presented with a page containing a header, a section for content, and a footer
@@ -36,11 +36,20 @@ The following describe the main features of the application:
 
 ## Mock-Up
 
-Demo of Project: [Work Portfolio Demo on Google Drive](https://drive.google.com/file/d/1elgIvQZRddK0SVEt-_nSS--MRvpQrOBV/view?usp=sharing) 
+Demo of Project: [Work Portfolio Demo on Google Drive](https://drive.google.com/file/d/1aXW7D1AGAq8BlwTciRnohFbqBYz7TUoE/view?usp=sharing) 
+                OR [Demo in reposiroty](./src/assets/work-portfolio-react-demo.mp4)
 
 Application Screenshot can be found in this folder:
 
 [Application Screenshots](./src/assets/)
+
+![About Me](./src/assets/About.PNG)
+
+![Portfolio](./src/assets/portfolio.PNG)
+
+![Contact](./src/assets/contact.PNG)
+
+![Resume](./src/assets/resume.PNG)
 
 ## Usage
 1. You can access the file in GitHub repository: https://github.com/rbhumbla1/work-portfolio-react 

@@ -22,7 +22,6 @@ const styles = {
         flex: '1 0 20%',
         fontSize: '35px',
         paddingTop: '20px',
-        //color: 'DarkBlue',
         color: '#1d3557',
         fontFamily: 'Permanent Marker',
     },
@@ -33,7 +32,6 @@ const styles = {
         flex: '1 0 20%',
         fontSize: '25px',
         paddingTop: '20px',
-        //color: 'DarkBlue',
         color: '#1d3557',
         fontFamily: 'Permanent Marker',
     },
@@ -47,15 +45,15 @@ const styles = {
 
 };
 
-export default function Resume() {
+// Resume allows the user to download the developers resume and show the high light of the resume
+export default function Resume({devResume}) {
     return (
         <div className="container" style={styles.div}>
             <div style={styles.box}>
                 <h2 style={styles.h2}><b>Resume</b></h2>
                 <br />
                 <p style={styles.p}>
-                    {/* <b>Download my <Link to="https://drive.google.com/file/d/1wZ1VstGJIhCX3tcviALWKg7rwhPpnCyP/view?usp=sharing" target="blank" download>Resume</Link></b> */}
-                    <b>Download my <a href="https://drive.google.com/file/d/1wZ1VstGJIhCX3tcviALWKg7rwhPpnCyP/view?usp=sharing" target="blank" download>Resume</a></b>
+                    <b>Download my <a href={devResume} target="blank" download>Resume</a></b>
                 </p>
                 
                         <h4 style={styles.h4}>Front-End Proficiencies</h4>

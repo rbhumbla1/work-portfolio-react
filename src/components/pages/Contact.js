@@ -71,6 +71,7 @@ const styles = {
 
 };
 
+//Form to submit contact information.  This page has error handling done in handleFocusChange and handleFormSubmit methods to catch empty input for required fields and invalid email 
 export default function Contact() {
 
   // Create state variables for the fields in the form
@@ -83,6 +84,7 @@ export default function Contact() {
   const [errorEmptyEmailMessage, setErrorEmptyEmailMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
+  //Method to store the input value
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
     const { target } = e;
@@ -100,6 +102,7 @@ export default function Contact() {
 
   };
 
+  //ethod to handle focus change - if the required field is empty, we will see a error message
   const handleFocusChange = (e) => {
     // Getting the value and name of the input which triggered the change
     const { target } = e;
