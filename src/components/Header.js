@@ -22,34 +22,16 @@ const styles = {
     flex: '1 0 20%',
     fontSize: '40px',
     color: '#ffffff',
-    //color:'#0d6efd',
     paddingTop: '20px',
     paddingLeft: '10px',
   },
 
-  /*navigation links in the header*/
-  nav: {
-    display: 'flex',
-    paddingTop: '10px',
-    marginRight: '50px',
-    justifyContent: 'flex-end',
-    flexDirection: 'row',
-    float: 'right',
-    fontFamily: 'Permanent Marker',
-    fontSize: '25px'
-  },
-
-  /*class selector*/
-
-  hlink: {
-    color: '#ffffff',
-    margin: '20px',
-  }
 };
 
 // We use JSX curly braces to evaluate the style object on the JSX tag
 
 function Header({ currentPage, handlePageChange }) {
+  
   return (
     <header style={styles.header}>
       <h1 style={styles.h1}>Rima Bhumbla</h1>

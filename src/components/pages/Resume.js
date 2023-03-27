@@ -24,7 +24,7 @@ const styles = {
         paddingTop: '20px',
         //color: 'DarkBlue',
         color: '#1d3557',
-        fontFamily: 'Trebuchet MS',
+        fontFamily: 'Permanent Marker',
     },
 
     h4: {

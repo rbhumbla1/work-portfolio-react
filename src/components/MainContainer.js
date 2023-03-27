@@ -23,16 +23,16 @@ function MainContainer() {
 
     // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
     const renderPage = () => {
-        if (currentPage === 'Portfolio') {
-            return <Portfolio />;
-        }
         if (currentPage === 'About') {
             return <About />;
         }
-        if (currentPage === 'Resume') {
-            return <Resume />;
+        if (currentPage === 'Portfolio') {
+            return <Portfolio />;
         }
-        return <Contact />;
+        if (currentPage === 'Contact') {
+            return <Contact />;
+        }
+        return <Resume />;
     };
 
     const handlePageChange = (page) => setCurrentPage(page);
@@ -40,7 +40,7 @@ function MainContainer() {
     return (
         <div style={styles.div}>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-    
+           
             {/* We are passing the currentPage from state and the function to update it */}
             {/* Here we are calling the renderPage method which will return a component  */}
             {renderPage()}

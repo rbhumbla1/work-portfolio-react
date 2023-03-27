@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-//import hcbgImage from "./email.jpg";
 import './Project.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -9,56 +8,29 @@ const styles = {
 
     div: {
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'left',
         alignItems: 'center',
         flexDirection: 'column',
         flex: '1 0 50%',
         //background: 'white'
     },
-
-    box: {
-        width: '100%',
-        height: '100%',
-    },
-
-    h2: {
-        display: 'flex',
-        justifyContent: 'flex-start',
-        flex: '1 0 20%',
-        fontSize: '30px',
-        paddingTop: '20px',
-        //color: 'DarkBlue',
-        color: '#1d3557',
-        fontFamily: 'Permanent Marker',
-    },
-
-    h4: {
-        display: 'flex',
-        justifyContent: 'flex-start',
-        flex: '1 0 20%',
-        fontSize: '20px',
-        paddingTop: '20px',
-        //color: 'DarkBlue',
-        color: '#1d3557',
-        fontFamily: 'Permanent Marker',
-    },
-
     p: {
-
         textAlign: 'left',
         fontSize: '25px',
-        //color: 'DarkBlue',
         color: '#1d3557',
         fontFamily: 'Permanent Marker',
     },
-
+    p1: {
+        textAlign: 'left',
+        fontSize: '20px',
+        color: '#1d3557',
+        fontFamily: 'Permanent Marker',
+    },
     icon: {
-        //color:'DarkBlue',
         color: '#1d3557',
         fontSize: '25px'
     },
     a: {
-        //display: 'inline-block',
         textDecoration: 'none',
         color: '#1d3557',
         marginRight: '20px'
@@ -108,7 +80,7 @@ export default function Project( proj ) {
                     </li>
                 </ul>
 
-                <p style={styles.p} className={display}>{proj.tech}</p>
+                <p style={styles.p1} className={display}>{proj.tech}</p>
             </div>
 
         </div>

@@ -19,7 +19,6 @@ nav: {
 
 };
 
-// We use JSX curly braces to evaluate the style object on the JSX tag
 
 function Navigation({ currentPage, handlePageChange }) {
   return (
@@ -29,7 +28,7 @@ function Navigation({ currentPage, handlePageChange }) {
           <Nav.Link href="#About" onClick={() => handlePageChange('About')}>About Me</Nav.Link>
         </Nav.Item>
         <Nav.Item as="li">
-          <Nav.Link href="#Work" onClick={() => handlePageChange('Portfolio')}>Portfolio</Nav.Link>
+          <Nav.Link href="#Portfolio" onClick={() => handlePageChange('Portfolio')}>Portfolio</Nav.Link>
         </Nav.Item>
         <Nav.Item as="li">
           <Nav.Link href="#Contact" onClick={() => handlePageChange('Contact')}>Contact</Nav.Link>

@@ -1,5 +1,5 @@
 import React from 'react';
-import photo from '../../LIProfile.JPG';
+import photo from '../images/LIProfile.JPG';
 
 const styles = {
 
@@ -11,19 +11,16 @@ const styles = {
          flex: '1 0 50%',
          background: 'white'
     },
-
     box: {
         width: '100%',
         height: '100%',
     },
-
     h2: {
         display: 'flex',
         justifyContent: 'flex-start',
         flex: '1 0 20%',
         fontSize: '35px',
         paddingTop: '20px',
-        //color:'DarkBlue',
         color: '#1d3557',
         fontFamily: 'Permanent Marker',
     },

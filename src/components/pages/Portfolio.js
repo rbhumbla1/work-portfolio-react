@@ -12,7 +12,7 @@ import quiz from "../images/quiz.jpg";
 
 
 
-let imgArr = [budgetly, outdoor, blog, editor, note, network, eCom, quiz];
+let imgArr = [budgetly, outdoor, blog, editor, note, quiz, eCom, network ];
 
 let projList = [
   {
@@ -57,30 +57,28 @@ let projList = [
   },
   {
     id: "6",
-    project: "Social Network API",
-    projectURL:"",
-    github: "https://github.com/rbhumbla1/Social-Network-API" ,
-    img: imgArr[5],
-    tech:"MongoDB, Mongoose ODM, Express.js,"
-  },
-  {
-    id: "7",
-    project: "E-Commerce Back End",
-    projectURL:"",
-    github: "https://github.com/rbhumbla1/E-Commerce-Back-End" ,
-    img: imgArr[6],
-    tech:"MySQL, Sequilize, Express"
-  },
-  {
-    id: "8",
     project: "Code Quiz",
     projectURL:"https://rbhumbla1.github.io/Code-Quiz",
     github: "https://github.com/rbhumbla1/Code-Quiz" ,
-    img: imgArr[7],
+    img: imgArr[5],
     tech:"Javascript, Bootstrap"
   },
- 
- 
+  // {
+  //   id: "7",
+  //   project: "E-Commerce Back End",
+  //   projectURL:"",
+  //   github: "https://github.com/rbhumbla1/E-Commerce-Back-End" ,
+  //   img: imgArr[6],
+  //   tech:"MySQL, Sequilize, Express, Insomnia"
+  // },
+  // {
+  //   id: "8",
+  //   project: "Social Network API",
+  //   projectURL:"",
+  //   github: "https://github.com/rbhumbla1/Social-Network-API" ,
+  //   img: imgArr[7],
+  //   tech:"MongoDB, Mongoose ODM, Express.js"
+  // },
 ];
 
 const styles = {
