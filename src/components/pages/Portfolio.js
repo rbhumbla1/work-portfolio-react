@@ -18,7 +18,7 @@ let projList = [
   {
     id: "1",
     project: "Group Project: Budgetly",
-    projectURL:"https://budget-app-nodejs.herokuapp.com/",
+    projectURL:"https://budgetly.herokuapp.com/",
     github: "https://github.com/rbhumbla1/Budgetly",
     img: imgArr[0],
     tech:"MVC: MySQL,Handlebars,Express"
