@@ -9,42 +9,50 @@ import note from "../images/note.jpg";
 import network from '../images/network.jpg';
 import eCom from "../images/ecom.jpg";
 import quiz from "../images/quiz.jpg";
+import hitched from "../images/hitched.jpg";
 
 
-
-let imgArr = [budgetly, outdoor, blog, editor, note, quiz, eCom, network ];
+let imgArr = [hitched, budgetly, outdoor, blog, editor, note ];
 
 let projList = [
   {
     id: "1",
-    project: "Group Project: Budgetly",
-    projectURL:"https://budgetly.herokuapp.com/",
-    github: "https://github.com/rbhumbla1/Budgetly",
+    project: "Hitched",
+    projectURL:"https://hitched.herokuapp.com/",
+    github: "https://github.com/AdMarom/Final-Project" ,
     img: imgArr[0],
-    tech:"MVC: MySQL,Handlebars,Express"
+    tech:"MERN"
   },
   {
     id: "2",
-    project: "Group Project: OutdoorsyISH",
-    projectURL:"https://rbhumbla1.github.io/outdoorsyISH/",
-    github: "/https://github.com/rbhumbla1/outdoorsyISH" ,
-    img:imgArr[1],
-    tech:"National Park Service(NPS) Public API, Openlayers, Foundation"
+    project: "Group Project: Budgetly",
+    projectURL:"https://budgetly.herokuapp.com/",
+    github: "https://github.com/rbhumbla1/Budgetly",
+    img: imgArr[1],
+    tech:"MVC: MySQL,Handlebars,Express"
   },
   {
     id: "3",
-    project: "Tech Blog",
-    projectURL:"https://serene-fjord-12187.herokuapp.com/",
-    github: "https://github.com/rbhumbla1/Tech-Blog" ,
-    img: imgArr[2],
-    tech:"Node.js, Sequilize, ORM"
+    project: "Group Project: OutdoorsyISH",
+    projectURL:"https://rbhumbla1.github.io/outdoorsyISH/",
+    github: "/https://github.com/rbhumbla1/outdoorsyISH" ,
+    img:imgArr[2],
+    tech:"National Park Service(NPS) Public API, Openlayers, Foundation"
   },
   {
     id: "4",
+    project: "Tech Blog",
+    projectURL:"https://serene-fjord-12187.herokuapp.com/",
+    github: "https://github.com/rbhumbla1/Tech-Blog" ,
+    img: imgArr[3],
+    tech:"Node.js, Sequilize, ORM"
+  },
+  {
+    id: "5",
     project: "J.A.T.E",
     projectURL:"https://secret-sierra-86705.herokuapp.com/",
     github: "https://github.com/rbhumbla1/Text-Editor-PWA" ,
-    img: imgArr[3],
+    img: imgArr[4],
     tech:"PWA Text Editor"
   },
   {
@@ -52,17 +60,10 @@ let projList = [
     project: "Note Taker",
     projectURL:"https://limitless-island-97368.herokuapp.com/",
     github: "https://github.com/rbhumbla1/Note-Taker" ,
-    img: imgArr[4],
+    img: imgArr[5],
     tech:"Express, Jest"
   },
-  {
-    id: "6",
-    project: "Code Quiz",
-    projectURL:"https://rbhumbla1.github.io/Code-Quiz",
-    github: "https://github.com/rbhumbla1/Code-Quiz" ,
-    img: imgArr[5],
-    tech:"Javascript, Bootstrap"
-  },
+
   // {
   //   id: "7",
   //   project: "E-Commerce Back End",
