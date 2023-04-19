@@ -19,7 +19,7 @@ let projList = [
     id: "1",
     project: "Hitched",
     projectURL:"https://hitched.herokuapp.com/",
-    github: "https://github.com/AdMarom/Final-Project" ,
+    github: "https://github.com/AdMarom/Hitched-Wedding-App" ,
     img: imgArr[0],
     tech:"MERN"
   },
