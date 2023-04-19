@@ -6,9 +6,9 @@ import outdoor from "../images/outdoor.jpg";
 import blog from "../images/blog.jpg";
 import editor from "../images/pwa.jpg";
 import note from "../images/note.jpg";
-import network from '../images/network.jpg';
-import eCom from "../images/ecom.jpg";
-import quiz from "../images/quiz.jpg";
+// import network from '../images/network.jpg';
+// import eCom from "../images/ecom.jpg";
+// import quiz from "../images/quiz.jpg";
 import hitched from "../images/hitched.jpg";
 
 
