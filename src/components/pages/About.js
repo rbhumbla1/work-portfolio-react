@@ -57,7 +57,7 @@ export default function About() {
 
                     <br /><br />With each project, I aim to understand how to best engage users for an impactful user experience. I applied aspects of Behavior Driven Development, Agile Development and Quality Assurance in a recent project where I worked in a team of 4 to develop an interactive front-end application, outdoorsyISH, that helps indoorsy people to explore our National Parks based on their criteria of comfort.
 
-                    <br /><br />When I am not designing or developing, I enjoy hiking with my dog, traveling with my husband and crocheting little gifts for my friends!  I am a big believer in lifelong learning and value of education.  I work part-time as a substitute teacher in my local school district.  I plan to continue in education field asa teacher and tutor.
+                    <br /><br />When I am not designing or developing, I enjoy hiking with my dog, traveling with my husband and crocheting little gifts for my friends!  I am a big believer in lifelong learning and value of education.  I work part-time as a substitute teacher in my local school district.  I plan to continue in education field as a teacher and tutor.
 
                     <br /><br />I am mainly interested in freelance or contracting work where I can leverage my skills as part of a fast-paced, quality-driven team. Reach out to me to chat about our next project <b><a href="https://www.linkedin.com/in/rimabhumbla/" target="blank">here</a></b>.
                 </p>
